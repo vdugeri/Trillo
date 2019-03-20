@@ -425,6 +425,64 @@ Header
   }
 }
 
+.cta {
+  padding: 3.5rem 0;
+  text-align: center;
+
+  &__book-now {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 2.5rem;
+  }
+}
+
+.btn {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  border: none;
+  font-weight: 300;
+  background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  & > * {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    transition: all .3s;
+  }
+
+  &__visible {
+    padding: 2rem 7.5rem;
+   }
+
+   &__on-hover {
+    position: absolute;
+    padding: 2rem 0;
+    left: 0;
+    top: -100%;
+   }
+
+   &:hover {
+    background-image: linear-gradient(to left, var(--color-primary-light), var(--color-primary-dark));
+   }
+
+   &:hover  &__on-hover {
+    top: 0;
+   }
+
+   &:hover &__visible {
+     transform: translateY(100%);
+   }
+
+  &:focus {
+    outline: none;
+    animation: pulsate 1s infinite;
+  }
+}
+
 /** Animations */
 @keyframes pulsate {
   0% {
