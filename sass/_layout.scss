@@ -1,16 +1,14 @@
 .container {
-  max-width: 120rem;
+  max-width: 80vw;
   margin: 8rem auto;
   background-color: var(--color-grey-light-2);
   box-shadow: var(--shadow-dark);
-
-  min-height: 80rem;
 }
 
 .header {
   height: 7rem;
   background-color: #fff;
-  border-bottom: var(--color-grey-light-1);
+  border-bottom: 1px solid var(--color-grey-light-1);
   font-size: 1.4rem;
   display: flex;
   justify-content: space-between;
@@ -32,7 +30,6 @@
 .hotel-view {
   //test
   height: 80rem;
-  background-color: orangered;
   flex: 1;
 
 }
